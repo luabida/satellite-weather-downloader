@@ -8,4 +8,3 @@ exec celery \
     --pidfile /tmp/celerybeat.pid
     --loglevel=INFO \
 
-chown 
