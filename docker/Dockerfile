@@ -54,4 +54,7 @@ COPY --chown=satellite:satellite satellite_downloader /opt/services/satellite_do
 
 WORKDIR /opt/services/satellite/
 
+RUN poetry config virtualenvs.create false \
+  && poetry install
+
 ENTRYPOINT ["bash", "/activate.sh"]
