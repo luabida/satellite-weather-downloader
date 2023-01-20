@@ -7,4 +7,3 @@ exec celery \
     -s /tmp/celerybeat-schedule \
     --pidfile /tmp/celerybeat.pid
     --loglevel=INFO \
-
